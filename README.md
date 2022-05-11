@@ -1,8 +1,10 @@
 # sage-one-tree-planted-hackathon-2022
 Code and artifacts of the Sage Tech Hackathon for Good for One Tree Planted
 
+To launch an interactive demo click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jeremiq/sage-one-tree-planted-hackathon-2022/HEAD?labpath=sage_one_tree_planted%2Fnotebooks%2Finteractive_notebook.ipynb)
+
 # Interactive map of disadvantaged census tracts
-Here is the demo of interactive map of disadvantaged census tracts that are
+Here is a map of disadvantaged census tracts that are
 in California.
 We are aiming to create layers of interactive maps that are the visualizations of
 various customized configuration of disadvantaged census tracts, where One Tree Planted
