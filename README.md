@@ -8,6 +8,7 @@ We are aiming to create layers of interactive maps that are the visualizations o
 various customized configuration of disadvantaged census tracts, where One Tree Planted
 can use them and embed in their website, showcasing their progress to the interested
 parties.
+![screen shot interactive_map ](sage_one_tree_planted/CA_disadvantaged_tracts.png)
 ![interactive_map](sage_one_tree_planted/DF_PFS_CA.html)
 
 
