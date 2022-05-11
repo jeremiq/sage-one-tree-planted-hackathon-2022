@@ -15,6 +15,7 @@ scipy = "^1.8.0"
 folium = "^0.12.1"
 rasterio = {version = "1.3b1", allow-prereleases = true}
 contextily = "^1.2.0"
+matplotlib-scalebar = "^0.8.1"
 
 [tool.poetry.dev-dependencies]
 
