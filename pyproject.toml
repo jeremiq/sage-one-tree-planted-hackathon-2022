@@ -13,6 +13,8 @@ pandas = "^1.4.2"
 scikit-learn = "^1.0.2"
 scipy = "^1.8.0"
 folium = "^0.12.1"
+rasterio = {version = "1.3b1", allow-prereleases = true}
+contextily = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 
