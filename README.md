@@ -12,4 +12,4 @@ Code and artifacts of the Sage Tech Hackathon for Good for One Tree Planted
 - Just run `poetry add <library name>`
 
 # Fire up a jupyter server and go from there
-1. `poetry run jupyter --notebook`
+1. `poetry run jupyter notebook sage_one_tree_planted/notebooks`
