@@ -4,11 +4,11 @@ import shutil
 import zipfile
 
 class ClimateAndEconomicJusticeDataset:
-    def __init__(self):
+    def __init__(self, local_data_path="../../_data/cej"):
         self.BASE_DATA_PATH="https://static-data-screeningtool.geoplatform.gov/data-pipeline/data/score"
         self.SCREENING_TOOL_DATA_URL = f"{self.BASE_DATA_PATH}/downloadable/Screening_Tool_Data.zip"
         self.SHAPEFILE_URL = f"{self.BASE_DATA_PATH}/shapefile/usa.zip"
-        self.local_path = pathlib.Path("../../_data/cej")
+        self.local_path = pathlib.Path(local_data_path)
         self.shape_file = self.local_path/"usa"
         self.screening_data=self.local_path/"screening_data"
         self._mkdirs()

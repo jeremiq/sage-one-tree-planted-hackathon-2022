@@ -24,4 +24,7 @@ RUN poetry install
 ENV PYTHONPATH "${PYTHONPATH}:${HOME}"
 ENV PATH=${PATH}:.venv/bin
 
+# cache data
+RUN poetry run python cache_data.py
+
 ENTRYPOINT []
