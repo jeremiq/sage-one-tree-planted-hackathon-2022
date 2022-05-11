@@ -22,7 +22,8 @@ class ClimateAndEconomicJusticeDataset:
         return not any(path.iterdir())
 
     def _fetch_screening_tool_data(self):
-        self._download_and_unpack(self.SHAPEFILE_URL, self.screening_data.name)
+        self._download_and_unpack(self.SCREENING_TOOL_DATA_URL, self.screening_data.name)
+
     def _fetch_shape_file(self):
         self._download_and_unpack(self.SHAPEFILE_URL, self.shape_file.name)
 
