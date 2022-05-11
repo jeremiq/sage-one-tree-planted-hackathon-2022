@@ -5,12 +5,14 @@ description = "Code for working with and aggregating data from https://screening
 authors = ["Jeremiah Edwards <jeremiah.edwards@sage.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.11"
 geopandas ="^0.10.2"
 jupyter = "^1.0.0"
 numpy = "^1.22.3"
 pandas = "^1.4.2"
 scikit-learn = "^1.0.2"
+scipy = "^1.8.0"
+folium = "^0.12.1"
 
 [tool.poetry.dev-dependencies]
 
