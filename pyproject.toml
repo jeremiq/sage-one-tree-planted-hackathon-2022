@@ -17,6 +17,7 @@ rasterio = {version = "1.3b1", allow-prereleases = true}
 contextily = "^1.2.0"
 matplotlib-scalebar = "^0.8.1"
 jupyterlab = "^3.4.0"
+seaborn = "^0.11.2"
 
 [tool.poetry.dev-dependencies]
 
