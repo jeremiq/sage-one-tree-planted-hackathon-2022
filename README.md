@@ -19,7 +19,9 @@ filter based on different criteria.
 
 These capabilities are important for answering such questions as
 > What are the most disadvantaged places in the US?
+
 > If I get a donation to plant trees in a given state, where in that state should we prioritize?
+
 > If I only want to use some of the Census Bureau's criteria, how can I see only those places that match that criteria?
 
 ## The Solution
