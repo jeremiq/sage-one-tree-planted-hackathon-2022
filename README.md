@@ -2,7 +2,7 @@
 
 Code and artifacts of the Sage Tech Hackathon for Good for One Tree Planted
 
-To launch an interactive demo click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jeremiq/sage-one-tree-planted-hackathon-2022/HEAD?labpath=sage_one_tree_planted%2Fnotebooks%2Finteractive_notebook.ipynb)
+To launch an interactive demo click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jeremiq/sage-one-tree-planted-hackathon-2022/v0.1.0?labpath=sage_one_tree_planted%2Fnotebooks%2Finteractive_notebook.ipynb)
 ![screen shot interactive_map
 ](sage_one_tree_planted/CA_disadvantaged_tracts.png)
 # Helping One Tree Planted!
@@ -24,26 +24,56 @@ These capabilities are important for answering such questions as
 
 > If I only want to use some of the Census Bureau's criteria, how can I see only those places that match that criteria?
 
+## Future directions
+
+Although we did not have time to implement it, we believe it would be
+valuable to integrate our solution with the [Canopy cover
+dataset](https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/)
+so that prioritization for planting trees could also take into account
+how many trees exist in a given area. We did explore this dataset and
+provide a notebook that could facilitate that integration
+[here](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/sage_one_tree_planted/notebooks/Canopy_data_exploration.ipynb)
+Using that notebook, you can compute the canopy coverage in a given
+Census Tract.
+
+Furthermore, we'd love to optimize the performance of the workbook and
+its deployment on Binder to facilitate easier sharing. However,
+running the notebook locally is the fastest way to access it at this time.
+
 ## The Solution
 We've created an interactive workbook that
-- pulls data dynamically from
+- Pulls data dynamically from
 the Climate and Economic Justice screening tool.
 - We present an
 interactive display where One Tree Planted can aggregate and filter
 that data based on geolocation and community size.
 - We allow users to select specific hardship criteria and also see
-which communities are most affected by  those.
+which communities are most affected by them
 - We provid interactive dynamic maps
 - We also provide dynamically updating downloadable CVSs of our
   analyses so that results can be easily shared.
-parties.
 - Finally, we make this workbook available as a docker container
   running jupyterlab so that it can be easily deployed and accessed
   from anywhere
 - That environment is deployed via JupyterHub Binder for easy access
   and sharing (although the initial deployment does take some time)
 
+### Technical details
 
+Our solution makes is based on a [dynamic data fetcher](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/sage_one_tree_planted/data/climate_and_economic_justice_dataset.py#L6) that pulls
+caches, and provides easy programatic access to their census data.
+
+After data is acquired, we make heavy users of the scientific python
+stack (pandas) to imlement custom aggregation and filtering.
+
+Finally our UI is based on a jupyternotebook that makes heavy use of
+ipython widgets to provide interactive controlls and generate dynamic
+downloadable links of CSVs. All maps are generated using the geopandas
+library. [Here's](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/sage_one_tree_planted/notebooks/interactive_notebook.ipynb) a link to a (non interactive view) of the entire
+workbook:
+
+We've provided a convenient [Docker container](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/Dockerfile) for running and
+displaying their full interactive notebook via JupyterHub Binder.
 
 
 
