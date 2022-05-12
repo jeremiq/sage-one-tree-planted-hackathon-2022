@@ -1279,6 +1279,27 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 
 [[package]]
+name = "rioxarray"
+version = "0.11.1"
+description = "geospatial xarray extension powered by rasterio"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+packaging = "*"
+pyproj = ">=2.2"
+rasterio = ">=1.1.1"
+xarray = ">=0.17"
+
+[package.extras]
+all = ["scipy", "sphinx-click", "nbsphinx", "sphinx-rtd-theme", "pytest (>=3.6)", "pytest-cov", "pytest-timeout", "dask", "netcdf4", "pylint", "mypy", "pre-commit"]
+dev = ["scipy", "sphinx-click", "nbsphinx", "sphinx-rtd-theme", "pytest (>=3.6)", "pytest-cov", "pytest-timeout", "dask", "netcdf4", "pylint", "mypy", "pre-commit"]
+doc = ["sphinx-click", "nbsphinx", "sphinx-rtd-theme"]
+interp = ["scipy"]
+test = ["pytest (>=3.6)", "pytest-cov", "pytest-timeout", "dask", "netcdf4"]
+
+[[package]]
 name = "scikit-learn"
 version = "1.0.2"
 description = "A set of python modules for machine learning and data mining"
@@ -1540,6 +1561,27 @@ python-versions = "*"
 notebook = ">=4.4.1"
 
 [[package]]
+name = "xarray"
+version = "2022.3.0"
+description = "N-D labeled arrays and datasets in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+numpy = ">=1.18"
+packaging = ">=20.0"
+pandas = ">=1.1"
+
+[package.extras]
+accel = ["scipy", "bottleneck", "numbagg"]
+complete = ["netcdf4", "h5netcdf", "scipy", "pydap", "zarr", "fsspec", "cftime", "rasterio", "cfgrib", "pooch", "bottleneck", "numbagg", "dask", "matplotlib", "seaborn", "nc-time-axis"]
+docs = ["netcdf4", "h5netcdf", "scipy", "pydap", "zarr", "fsspec", "cftime", "rasterio", "cfgrib", "pooch", "bottleneck", "numbagg", "dask", "matplotlib", "seaborn", "nc-time-axis", "sphinx-autosummary-accessors", "sphinx-rtd-theme", "ipython", "ipykernel", "jupyter-client", "nbsphinx", "scanpydoc"]
+io = ["netcdf4", "h5netcdf", "scipy", "pydap", "zarr", "fsspec", "cftime", "rasterio", "cfgrib", "pooch"]
+parallel = ["dask"]
+viz = ["matplotlib", "seaborn", "nc-time-axis"]
+
+[[package]]
 name = "xyzservices"
 version = "2022.4.0"
 description = "Source of XYZ tiles providers"
@@ -1550,7 +1592,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10,<3.11"
-content-hash = "3049bec55c1ead4c2b6faa44036cf78f2e59927dbd43bd49a6991935e1049c88"
+content-hash = "1974ed1e2f4f79a954124e81d3d2c7b92360d6fe65c04024c5f10ed03ec8b8a0"
 
 [metadata.files]
 affine = [
@@ -2345,6 +2387,9 @@ requests = [
     {file = "requests-2.27.1-py2.py3-none-any.whl", hash = "sha256:f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"},
     {file = "requests-2.27.1.tar.gz", hash = "sha256:68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61"},
 ]
+rioxarray = [
+    {file = "rioxarray-0.11.1.tar.gz", hash = "sha256:9932db0498d13bd1a2643b0eaa657d3d1558118396af0dd1ea86dae6f91e0ff4"},
+]
 scikit-learn = [
     {file = "scikit-learn-1.0.2.tar.gz", hash = "sha256:b5870959a5484b614f26d31ca4c17524b1b0317522199dc985c3b4256e030767"},
     {file = "scikit_learn-1.0.2-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:da3c84694ff693b5b3194d8752ccf935a665b8b5edc33a283122f4273ca3e687"},
@@ -2554,6 +2599,10 @@ websocket-client = [
 widgetsnbextension = [
     {file = "widgetsnbextension-3.6.0-py2.py3-none-any.whl", hash = "sha256:4fd321cad39fdcf8a8e248a657202d42917ada8e8ed5dd3f60f073e0d54ceabd"},
     {file = "widgetsnbextension-3.6.0.tar.gz", hash = "sha256:e84a7a9fcb9baf3d57106e184a7389a8f8eb935bf741a5eb9d60aa18cc029a80"},
+]
+xarray = [
+    {file = "xarray-2022.3.0-py3-none-any.whl", hash = "sha256:560f36eaabe7a989d5583d37ec753dd737357aa6a6453e55c80bb4f92291a69e"},
+    {file = "xarray-2022.3.0.tar.gz", hash = "sha256:398344bf7d170477aaceff70210e11ebd69af6b156fe13978054d25c48729440"},
 ]
 xyzservices = [
     {file = "xyzservices-2022.4.0-py3-none-any.whl", hash = "sha256:070d055857cb16fa9e3b53a7b948fc09ba5b2b34a6cf91ee4eed7ffca9321e76"},
