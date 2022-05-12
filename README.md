@@ -43,7 +43,21 @@ parties.
 - That environment is deployed via JupyterHub Binder for easy access
   and sharing (although the initial deployment does take some time)
 
+### Technical details
 
+Our solution makes is based on a [dynamic data fetcher](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/sage_one_tree_planted/data/climate_and_economic_justice_dataset.py#L6) that pulls
+caches, and provides easy programatic access to their census data.
+
+After data is acquired, we make heavy users of the scientific python
+stack (pandas) to imlement custom aggregation and filtering.
+
+Finally our UI is based on a jupyternotebook that makes heavy use of
+ipython widgets to provide interactive controlls and generate dynamic
+downloadable links of CSVs. All maps are generated using the geopandas
+library.
+
+We've provided a convenient docker container for running and
+displaying their full interactive notebook via JupyterHub Binder.
 
 
 
