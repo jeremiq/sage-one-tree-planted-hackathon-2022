@@ -54,9 +54,10 @@ stack (pandas) to imlement custom aggregation and filtering.
 Finally our UI is based on a jupyternotebook that makes heavy use of
 ipython widgets to provide interactive controlls and generate dynamic
 downloadable links of CSVs. All maps are generated using the geopandas
-library.
+library. [Here's](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/sage_one_tree_planted/notebooks/interactive_notebook.ipynb) a link to a (non interactive view) of the entire
+workbook:
 
-We've provided a convenient docker container for running and
+We've provided a convenient [Docker container](https://github.com/jeremiq/sage-one-tree-planted-hackathon-2022/blob/main/Dockerfile) for running and
 displaying their full interactive notebook via JupyterHub Binder.
 
 
