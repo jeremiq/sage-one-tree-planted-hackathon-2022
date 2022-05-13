@@ -2,7 +2,8 @@
 
 Code and artifacts of the Sage Tech Hackathon for Good for One Tree Planted
 
-To launch an interactive demo click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jeremiq/sage-one-tree-planted-hackathon-2022/v0.1.1?labpath=sage_one_tree_planted%2Fnotebooks%2Finteractive_notebook.ipynb)
+To launch an interactive demo click here (Wait a few minutes for their
+notebook to startup then you click Run -> Run All Cells) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jeremiq/sage-one-tree-planted-hackathon-2022/v0.1.1?labpath=sage_one_tree_planted%2Fnotebooks%2Finteractive_notebook.ipynb)
 ![screen shot interactive_map
 ](sage_one_tree_planted/CA_disadvantaged_tracts.png)
 # Helping One Tree Planted!
